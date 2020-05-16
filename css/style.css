@@ -77,17 +77,23 @@ section {
 .site-title {
     font-size: 4em;
     text-align: center;
-    text-shadow: 0px 1px 10px grey;
-}
+  }
 
-.site-subtitle1 {opacity: 0; animation: ease-in 2s animacaoTitulo forwards;}
-@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
-.site-subtitle2 {opacity: 0; animation: ease-in 4s animacaoTitulo forwards;}
-@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
-.site-subtitle3 {opacity: 0; animation: ease-in 8s animacaoTitulo forwards;}
-@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
-.site-subtitle4 {opacity: 0; animation: ease-in 10s animacaoTitulo forwards;}
-@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
+.site-subtitle1 {
+  opacity: 0; animation: ease-out 2s animacaoTitulo forwards;
+}@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
+
+.site-subtitle2 {
+  opacity: 0; animation: ease-out 4s animacaoTitulo forwards;
+}@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
+
+.site-subtitle3 {
+  opacity: 0; animation: ease-out 8s animacaoTitulo forwards;
+}@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
+
+.site-subtitle4 {
+  opacity: 0; animation: ease-out 10s animacaoTitulo forwards;
+}@keyframes animacaoTitulo {100% {transform: scale(1) translateY(0);opacity: 1;}}
 
 .site-subtitle1,
 .site-subtitle2,
@@ -138,7 +144,6 @@ section {
 }
 
 .about li {
-  font-style: italic;
   list-style: none; 
 }
 
@@ -147,7 +152,9 @@ section {
   text-shadow: 4px 3px 5px grey;
 }
 
-.about-icon-map {color: red;}
+.about-icon-map {color: darkred;}
+Animação About
+
 .about-icon-graduation {color: black;}
 .about-icon-building {color: rgba(0, 0, 0, 0.7);}
 
@@ -155,6 +162,15 @@ section {
 .about li {
   color: rgba(0, 0, 0, 0.7);  
   text-decoration:none;
+}
+
+.about-icon:focus-visible {
+  transform: translateY(-100vh); animation: 1s animacaoAbout forwards;
+}
+@keyframes animacaoAbout {
+  to {
+    transform: translate(0);
+  }
 }
 
 .about a:hover {
