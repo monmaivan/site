@@ -153,8 +153,6 @@ section {
 }
 
 .about-icon-map {color: darkred;}
-Animação About
-
 .about-icon-graduation {color: black;}
 .about-icon-building {color: rgba(0, 0, 0, 0.7);}
 
@@ -164,7 +162,7 @@ Animação About
   text-decoration:none;
 }
 
-.about-icon:focus-visible {
+.about-icon {
   transform: translateY(-100vh); animation: 1s animacaoAbout forwards;
 }
 @keyframes animacaoAbout {
