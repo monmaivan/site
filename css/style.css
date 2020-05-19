@@ -268,8 +268,8 @@ footer {
 
 .fa-heart {
   color: black;
-  animation: map 800ms infinite alternate;}
-  @keyframes map {
+  animation: heart 500ms infinite alternate;}
+  @keyframes heart {
     100% {
     font-size: 1.05em;
     }
