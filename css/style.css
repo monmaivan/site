@@ -80,19 +80,19 @@ header {
 }
 
 .titles h2 {
-opacity: 0; animation: ease-out 3s animacaoTitulo infinite alternate;}
+opacity: .5; animation: ease-out 3s animacaoTitulo infinite alternate;}
 @keyframes animacaoTitulo{100% {opacity: 1;}}
 
 .titles h3 {
-opacity: 0; animation: ease 3s animacaoTitulo infinite alternate;}
+opacity: 0.5; animation: ease 3s animacaoTitulo infinite alternate;}
 @keyframes animacaoTitulo{100% {opacity: 1;}}
   
 .titles h4 {
-opacity: 0; animation: ease-in-out 3s animacaoTitulo infinite alternate;}
+opacity: 0.5; animation: ease-in-out 3s animacaoTitulo infinite alternate;}
 @keyframes animacaoTitulo{100% {opacity: 1;}}
 
 .titles h5 {
-opacity: 0; animation: ease-in 3s animacaoTitulo infinite alternate;}
+opacity: 0.5; animation: ease-in 3s animacaoTitulo infinite alternate;}
 @keyframes animacaoTitulo{100% {opacity: 1;}}
 
 .contact a:active,
@@ -115,9 +115,14 @@ opacity: 0; animation: ease-in 3s animacaoTitulo infinite alternate;}
 .about h2,
 .contact h2,
 .projects h2 {
+  border: 1px solid black;
+  border-radius: 2em;
+  box-shadow: 10px 10px black;
   font-size: 2em;
+  margin: 0 auto;
   margin-top: .5em;
   margin-bottom: 1.5em;
+  width: 75%;
 }
 
 .about ul {
@@ -221,15 +226,6 @@ opacity: 0; animation: ease-in 3s animacaoTitulo infinite alternate;}
 
 footer {
   align-items: center;
-  justify-content: space-around;
-}
-
-.footer {
-  background-color: white;
-  bottom: 0;
-  box-shadow: 10px -2px 5px grey;
-  width: 100vw;
-  z-index: 1;
 }
 
 .footer ul {
@@ -260,7 +256,6 @@ footer {
 
 .footer p {
   color: white;
-  justify-content: space-evenly;
 }
 
 .icons a {
