@@ -95,16 +95,6 @@ opacity: 0.5; animation: ease-in-out 3s animacaoTitulo infinite alternate;}
 opacity: 0.5; animation: ease-in 3s animacaoTitulo infinite alternate;}
 @keyframes animacaoTitulo{100% {opacity: 1;}}
 
-.contact a:active,
-.contact a:hover {
-  background-color: black;
-  border-radius: 20px;
-  color: white;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-
 /*Início About*/
 .about,
 .projects{
@@ -130,6 +120,10 @@ opacity: 0.5; animation: ease-in 3s animacaoTitulo infinite alternate;}
   padding-bottom: 2em
 }
 
+.about .fas {
+  color: black;
+}
+
 .fa-map-marker-alt {
   color: black;
   animation: map 2s infinite alternate;}
@@ -141,10 +135,13 @@ opacity: 0.5; animation: ease-in 3s animacaoTitulo infinite alternate;}
 
 .about a,
 .about li {
-  color: black;  
+  color: rgba(0, 0, 0, 0.6);  
+  font-weight: lighter;
   text-decoration:none;
 }
 
+.about .fa-chevron-up:hover,
+.about .fa-chevron-down:hover,
 .about a:hover {
   background-color: black;
   border-radius: 20px;
@@ -205,7 +202,7 @@ opacity: 0.5; animation: ease-in 3s animacaoTitulo infinite alternate;}
   height: 180px;
   width: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: left;
   transition: 500ms;
 }
 
