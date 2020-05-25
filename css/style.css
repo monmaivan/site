@@ -38,7 +38,7 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
 }
 
 .menu ul {
@@ -100,6 +100,7 @@ opacity: 0.5; animation: ease-in 3s animacaoTitulo infinite alternate;}
 .projects{
   padding: 2em;
   min-height: 100vh;
+  background-color: white;
 }
 
 .about h2,
