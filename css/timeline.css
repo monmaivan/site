@@ -125,7 +125,7 @@
   }
   
   /* Make all right containers behave like the left ones */
-  .right {
+  .left, .right {
   left: 0%;
   }
 }
